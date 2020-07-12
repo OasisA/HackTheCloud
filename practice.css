@@ -57,3 +57,7 @@ background-color: #f8f4f8;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
 }
+img{
+    width: 350px;
+    height: auto;
+}

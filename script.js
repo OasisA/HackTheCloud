@@ -9,28 +9,28 @@ function determineTips(event){
     var tipResult = "";
     var radiation = radiationEl.value;
     var location = locationEl.value;
-    if (radiationEl < 0 ){
-        tipResult= "ERROR: Please check you UV index input. ";
+    if (radiation <= 0 ){
+        tipResult= "Unfortunately any number less than 0 is not a valid input, please check you UV index input again.";
     }
-    else if (radiationEl >0 && radiationEl<= 2){
-        tipResult = "We recommend youuse sunscreen SPF 30+ and wear sunglasses and a hat if it is a bright day.";
+    else if (radiation > 0 && radiation<= 2){
+        tipResult = "We recommend you use sunscreen SPF 30+ if you burn easily and wear sunglasses if it is a bright day.";
     }
-    else if (radiationEl > 2 && radiationEl<= 5){
-        tipResult = "We recommend youuse sunscreen SPF 30+ and wear sunglasses and a hat if it is a bright day.";
+    else if (radiation > 2 && radiation<= 5){
+        tipResult = "We recommend you use sunscreen SPF 30+. Wear sunglasses and a hat if it is a bright day, and try to find shade when the sun is at its highest point during midday.";
 
     }
-    else if (radiationEl> 5 && radiationEl <= 7){
-        tipResult = "We recommend youuse sunscreen SPF 30+ and wear sunglasses and a hat if it is a bright day.";
+    else if (radiation> 5 && radiation <= 7){
+        tipResult = "We recommend you use sunscreen SPF 30+ and wear sunglasses and a hat if it is a bright day.";
 
  }
- else if (radiationEl> 7 && radiationEl <= 10){
-    tipResult = "We recommend youuse sunscreen SPF 30+ and wear sunglasses and a hat if it is a bright day.";
+ else if (radiation> 7 && radiation <= 10){
+    tipResult = "We recommend you use sunscreen SPF 30+ and wear sunglasses and a hat if it is a bright day.";
  }
  else {
-    tipResult = "We recommend youuse sunscreen SPF 30+ and wear sunglasses and a hat if it is a bright day.";
+    tipResult = "We recommend you use sunscreen SPF 30+ and wear sunglasses and a hat if it is a bright day.";
 
  }
-document.querySelector("#tips").textContent = "If you live in " + location + ", the UV index today is " + radiation + ". " + tipResult;
+document.querySelector("#tips").textContent = "→ If you live in " + location + ", the UV index today is " + radiation + ". " + tipResult;
 
 
 }

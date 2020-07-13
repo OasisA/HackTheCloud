@@ -13,22 +13,21 @@ function determineTips(event){
         tipResult= "Unfortunately any number less than 0 is not a valid input, please check you UV index input again.";
     }
     else if (radiation > 0 && radiation<= 2){
-        tipResult = "We recommend you use sunscreen SPF 30+ if you burn easily and wear sunglasses if it is a bright day.";
+        tipResult = "NO PROTECTION REQUIRED. Your exposure to UV radiation will be low. We recommend you use sunscreen SPF 30+ if you burn easily and wear sunglasses if it is a bright day.";
     }
     else if (radiation > 2 && radiation<= 5){
-        tipResult = "We recommend you use sunscreen SPF 30+. Wear sunglasses and a hat if it is a bright day, and try to find shade when the sun is at its highest point during midday.";
+        tipResult = "PROTECTION REQUIRED. Your exposure to UV radiation will be moderate. We recommend you use sunscreen SPF 30+, reapply suncreen every 2 hours.. Wear sunglasses and a hat if it is a bright day, and try to find shade when the sun is at its highest point during midday.";
 
     }
     else if (radiation> 5 && radiation <= 7){
-        tipResult = "We recommend you use sunscreen SPF 30+ and wear sunglasses and a hat if it is a bright day.";
+        tipResult = "PROTECTION REQUIRED. Your exposure to UV radiation will be high. It is vital that you use at least sunscreen SPF 30+, reapply suncreen every 2 hours. Wear sunglasses and a hat if it is a bright day, and try to find shade when the sun is at its highest point during midday. Wear long sleeved shirts and pants.";
 
  }
  else if (radiation> 7 && radiation <= 10){
-    tipResult = "We recommend you use sunscreen SPF 30+ and wear sunglasses and a hat if it is a bright day.";
+    tipResult = "EXTRA PROTECTION REQUIRED. Your exposure to UV radiation will be very high. Take extra precautions, it is vital that you use at least sunscreen SPF 30+, reapply suncreen every 2 hours. Wear sunglasses and a hat if it is a bright day, and try to find shade when the sun is at its highest point during midday. Wear long sleeved shirts and pants. Try to avoid sun exposure between 10 AM and 4PM.";
  }
  else {
-    tipResult = "We recommend you use sunscreen SPF 30+ and wear sunglasses and a hat if it is a bright day.";
-
+    tipResult = "EXTRA PROTECTION REQUIRED. Your exposure to UV radiation will be extreme. Make sure to take all necessary precautions, it is vital that you use at least sunscreen SPF 30+, reapply suncreen every 2 hours. Wear sunglasses and a hat if it is a bright day, and try to find shade when the sun is at its highest point during midday. Wear long sleeved shirts and pants. Try to avoid sun exposure between 10 AM and 4PM.";
  }
 document.querySelector("#tips").textContent = "→ If you live in " + location + ", the UV index today is " + radiation + ". " + tipResult;
 

@@ -1,4 +1,4 @@
-h1, p, a, h2, h5, h4, #form {
+h1, p, a, h2, h5, h4, h6, #form {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: #800080;
 }
@@ -88,4 +88,7 @@ body{
 
 a:not([href]){
     color: #f8f4f8;
+}
+h6 {
+    font-size: 14px;
 }
